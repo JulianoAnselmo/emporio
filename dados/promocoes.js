@@ -1,0 +1,88 @@
+window.__DATA__ = window.__DATA__ || {};
+window.__DATA__.promocoes = {
+  "promocoes_dia": {
+    "segunda": [],
+    "terca": [
+      { "texto": "Terça da Cerveja — chopp em dobro a noite toda!", "destaque": true }
+    ],
+    "quarta": [
+      { "texto": "Quarta dos Drinks — coquetéis autorais com desconto especial", "destaque": false }
+    ],
+    "quinta": [
+      { "texto": "Quinta do Happy Hour — porções selecionadas com preço especial", "destaque": true }
+    ],
+    "sexta": [
+      { "texto": "Sexta no Empório — a melhor noite de Taquaritinga começa aqui!", "destaque": true }
+    ],
+    "sabado": [
+      { "texto": "Sábado Especial — aberto desde as 11h com cardápio completo e promoções", "destaque": true }
+    ],
+    "domingo": [
+      { "texto": "Domingo no Empório — consulte horários e programação especial", "destaque": false }
+    ]
+  },
+  "programacao_semana": [
+    {
+      "dia": "Terça",
+      "titulo": "Chopp em Dobro",
+      "descricao": "Peça um chopp e ganhe outro — a noite toda, sem pegadinha",
+      "icone": "beer",
+      "ativo": true
+    },
+    {
+      "dia": "Quarta",
+      "titulo": "Noite dos Drinks",
+      "descricao": "Drinks autorais e clássicos com condições especiais",
+      "icone": "cocktail",
+      "ativo": true
+    },
+    {
+      "dia": "Quinta",
+      "titulo": "Happy Hour",
+      "descricao": "Porções selecionadas e cervejas com preço amigo a partir das 17h",
+      "icone": "glass",
+      "ativo": true
+    },
+    {
+      "dia": "Sexta",
+      "titulo": "Sexta Premium",
+      "descricao": "A melhor noite da semana com cardápio completo e clima especial",
+      "icone": "star",
+      "ativo": true
+    },
+    {
+      "dia": "Sábado",
+      "titulo": "Sábado no Empório",
+      "descricao": "Do almoço à madrugada — o dia inteiro com o melhor da casa",
+      "icone": "sun",
+      "ativo": true
+    }
+  ],
+  "eventos": [
+    {
+      "titulo": "Aniversários",
+      "descricao": "Comemore com quem importa no melhor espaço de Taquaritinga. Pacotes personalizados.",
+      "icone": "calendar",
+      "ativo": true
+    },
+    {
+      "titulo": "Confraternizações",
+      "descricao": "Reuniões de equipe, amigo secreto, happy hour corporativo — organizamos tudo.",
+      "icone": "utensils",
+      "ativo": true
+    },
+    {
+      "titulo": "Encontros",
+      "descricao": "Encontros de amigos, casais ou grupos com espaço reservado e cardápio especial.",
+      "icone": "star",
+      "ativo": true
+    },
+    {
+      "titulo": "Eventos Corporativos",
+      "descricao": "Espaço para reuniões informais, lançamentos e happy hours empresariais.",
+      "icone": "flame",
+      "ativo": true
+    }
+  ]
+}
+;

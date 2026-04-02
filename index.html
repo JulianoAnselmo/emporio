@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empório Gourmet | Bar e Restaurante em Taquaritinga - SP</title>
+    <meta name="description" content="Empório Gourmet — drinks autorais, cervejas geladas, porções irresistíveis e o melhor ambiente de Taquaritinga-SP.">
+    <meta name="keywords" content="bar taquaritinga, restaurante taquaritinga, happy hour, drinks, empório gourmet, porções">
+    <link rel="canonical" href="https://emporiogourmet.com.br">
+    <meta property="og:title" content="Empório Gourmet | Bar e Restaurante em Taquaritinga">
+    <meta property="og:description" content="Drinks autorais, cervejas geladas, porções irresistíveis e o melhor ambiente de Taquaritinga.">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:image" content="https://emporiogourmet.com.br/imagens/hero-split.png">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org", "@type": "Restaurant",
+        "name": "Empório Gourmet",
+        "address": {"@type": "PostalAddress", "streetAddress": "Av. Paulo Roberto Scandar, 695 - Centro", "addressLocality": "Taquaritinga", "addressRegion": "SP", "addressCountry": "BR"},
+        "geo": {"@type": "GeoCoordinates", "latitude": "-21.4050", "longitude": "-48.5087"},
+        "telephone": "+551632528621", "servesCuisine": "Brazilian", "priceRange": "$$",
+        "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.4", "reviewCount": "158"},
+        "openingHoursSpecification": [
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "17:00", "closes": "00:00"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "17:00", "closes": "00:00"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "17:00", "closes": "00:00"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "17:00", "closes": "00:00"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "11:00", "closes": "01:00"}
+        ]
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='6' fill='%230F2E3D'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%23E8834A' font-family='Arial,sans-serif' font-size='24' font-weight='bold'%3EEG%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    :root{
+        --primary:#0F2E3D;
+        --primary-light:#1A4A5E;
+        --primary-lighter:#2B6A82;
+        --accent:#E8834A;
+        --accent-light:#F09E6E;
+        --accent-dark:#C96A33;
+        --bg:#FAFAFA;
+        --bg-alt:#F3F0EB;
+        --bg-dark:#0F2E3D;
+        --bg-darker:#091C27;
+        --text:#1A1A1A;
+        --text-body:#3D3D3D;
+        --text-light:#F0EDE8;
+        --text-muted:#8A857E;
+        --border:#E2DDD5;
+        --font-head:'Space Grotesk',system-ui,sans-serif;
+        --font-body:'Inter',system-ui,sans-serif;
+        --max-w:1180px;
+        --ease:cubic-bezier(.16,1,.3,1);
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:var(--font-body);font-size:16px;line-height:1.65;color:var(--text-body);background:var(--bg);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    img{max-width:100%;height:auto;display:block}
+    a{text-decoration:none;color:inherit}
+    button{cursor:pointer;border:none;background:none;font-family:inherit}
+    .wrap{max-width:var(--max-w);margin:0 auto;padding:0 28px}
+    section{padding:96px 0;position:relative}
+
+    /* --- REVEAL (horizontal slide) --- */
+    .rv{opacity:0;transform:translateX(-32px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+    .rv.vis{opacity:1;transform:translateX(0)}
+    .rv-d1{transition-delay:.1s}.rv-d2{transition-delay:.2s}.rv-d3{transition-delay:.3s}.rv-d4{transition-delay:.4s}
+    .rv-up{transform:translateY(24px)}
+    .rv-up.vis{transform:translateY(0)}
+
+    /* --- BUTTONS (rectangular, sharp) --- */
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:4px;font-size:.82rem;font-weight:600;letter-spacing:.8px;text-transform:uppercase;transition:all .3s var(--ease)}
+    .btn svg{width:17px;height:17px;flex-shrink:0}
+    .btn-accent{background:var(--accent);color:#fff}
+    .btn-accent:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(232,131,74,.3)}
+    .btn-dark{background:var(--primary);color:#fff}
+    .btn-dark:hover{background:var(--primary-light);transform:translateY(-2px)}
+    .btn-ghost{border:2px solid var(--primary);color:var(--primary)}
+    .btn-ghost:hover{background:var(--primary);color:#fff}
+    .btn-ghost-light{border:2px solid rgba(255,255,255,.35);color:#fff}
+    .btn-ghost-light:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+    .btn-wa{background:#25D366;color:#fff}
+    .btn-wa:hover{background:#20BD5A;transform:translateY(-2px)}
+
+    /* --- SECTION HEADER (left-aligned, accent bar) --- */
+    .sec-head{margin-bottom:48px}
+    .sec-head.centered{text-align:center}
+    .sec-label{font-size:.7rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+    .sec-title{font-family:var(--font-head);font-size:2.6rem;font-weight:700;color:var(--text);line-height:1.15;margin-bottom:14px}
+    .sec-title::after{content:'';display:block;width:48px;height:3px;background:var(--accent);margin-top:14px}
+    .sec-head.centered .sec-title::after{margin-left:auto;margin-right:auto}
+    .sec-dark .sec-title{color:var(--text-light)}
+    .sec-dark .sec-title::after{background:var(--accent-light)}
+    .sec-sub{font-size:.95rem;color:var(--text-muted);max-width:520px}
+    .sec-head.centered .sec-sub{margin:0 auto}
+    .sec-dark .sec-sub{color:rgba(255,255,255,.55)}
+
+    /* --- PRELOADER --- */
+    .preloader{position:fixed;inset:0;z-index:99999;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--bg);transition:opacity .5s,visibility .5s}
+    .preloader.hidden{opacity:0;visibility:hidden}
+    .preloader-name{font-family:var(--font-head);font-size:1.6rem;font-weight:700;color:var(--primary);margin-bottom:20px;letter-spacing:-0.5px}
+    .preloader-bar{width:100px;height:3px;background:var(--border);border-radius:2px;overflow:hidden}
+    .preloader-fill{width:100%;height:100%;background:var(--accent);transform-origin:left;animation:loadbar 1.6s var(--ease) forwards}
+    @keyframes loadbar{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+
+    /* --- PROMO BANNER --- */
+    .promo{position:fixed;top:0;left:0;right:0;z-index:1001;background:var(--accent);color:#fff;padding:10px 28px;text-align:center;font-size:.82rem;font-weight:600;letter-spacing:.3px;transform:translateY(-100%);transition:transform .4s var(--ease);display:flex;align-items:center;justify-content:center;gap:14px}
+    .promo.on{transform:translateY(0)}
+    .promo-x{background:rgba(255,255,255,.2);border-radius:4px;width:22px;height:22px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;flex-shrink:0;cursor:pointer;transition:background .3s}
+    .promo-x:hover{background:rgba(255,255,255,.35)}
+    body.has-promo .hdr{top:38px}
+
+    /* --- HEADER (minimal, no pill) --- */
+    .hdr{position:fixed;top:0;left:0;right:0;z-index:1000;height:72px;padding:0 32px;display:flex;align-items:center;justify-content:space-between;transition:all .35s var(--ease)}
+    .hdr.solid{background:rgba(250,250,250,.95);backdrop-filter:blur(16px);box-shadow:0 1px 0 var(--border)}
+    .hdr-logo{font-family:var(--font-head);font-size:1.3rem;font-weight:700;letter-spacing:-0.5px;color:#fff;transition:color .35s}
+    .hdr.solid .hdr-logo{color:var(--primary)}
+    .hdr-nav{display:flex;gap:28px}
+    .hdr-nav a{font-size:.8rem;font-weight:500;color:rgba(255,255,255,.8);transition:color .3s;position:relative}
+    .hdr-nav a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:2px;background:var(--accent);transition:width .3s var(--ease)}
+    .hdr-nav a:hover::after,.hdr-nav a.active::after{width:100%}
+    .hdr.solid .hdr-nav a{color:var(--text-muted)}
+    .hdr.solid .hdr-nav a:hover{color:var(--primary)}
+    .hdr-wa{display:inline-flex;align-items:center;gap:6px;padding:8px 18px;border-radius:4px;font-size:.78rem;font-weight:600;background:var(--accent);color:#fff;letter-spacing:.5px;text-transform:uppercase;transition:all .3s}
+    .hdr-wa:hover{background:var(--accent-dark)}
+    .hdr-wa svg{width:15px;height:15px}
+    .hamburger{display:none;width:26px;height:18px;position:relative;z-index:1001}
+    .hamburger span{display:block;width:100%;height:2px;background:#fff;position:absolute;left:0;transition:all .3s var(--ease)}
+    .hdr.solid .hamburger span{background:var(--text)}
+    .hamburger span:nth-child(1){top:0}.hamburger span:nth-child(2){top:8px}.hamburger span:nth-child(3){bottom:0}
+    .hamburger.open span:nth-child(1){top:8px;transform:rotate(45deg);background:var(--text)}
+    .hamburger.open span:nth-child(2){opacity:0}
+    .hamburger.open span:nth-child(3){bottom:8px;transform:rotate(-45deg);background:var(--text)}
+    .mob-menu{position:fixed;inset:0;z-index:999;background:rgba(250,250,250,.98);backdrop-filter:blur(16px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;opacity:0;visibility:hidden;transition:all .35s var(--ease)}
+    .mob-menu.open{opacity:1;visibility:visible}
+    .mob-menu a{font-family:var(--font-head);font-size:1.5rem;font-weight:600;color:var(--primary)}
+
+    /* --- HERO (split asymmetric) --- */
+    .hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;background:var(--bg-dark);overflow:hidden}
+    .hero-text{display:flex;flex-direction:column;justify-content:center;padding:80px 60px 80px 0;position:relative;z-index:1;margin-left:auto;max-width:600px}
+    .hero-badge{display:inline-block;padding:5px 14px;border:1px solid rgba(232,131,74,.4);border-radius:4px;font-size:.68rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent-light);margin-bottom:20px;width:fit-content}
+    .hero h1{font-family:var(--font-head);font-size:4.2rem;font-weight:700;color:#fff;line-height:1.05;letter-spacing:-1.5px;margin-bottom:16px}
+    .hero-phrase{font-size:1.15rem;color:var(--accent-light);font-weight:500;margin-bottom:14px}
+    .hero-desc{font-size:1rem;color:rgba(255,255,255,.6);max-width:440px;margin-bottom:36px;line-height:1.7}
+    .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+    .hero-img{position:relative;overflow:hidden}
+    .hero-img-inner{position:absolute;inset:-5%;background:url('imagens/hero-split.png') center/cover;will-change:transform}
+    .hero-img-overlay{position:absolute;inset:0;background:linear-gradient(90deg,var(--bg-dark) 0%,rgba(15,46,61,.3) 40%,transparent 100%)}
+
+    /* --- ABOUT (text-heavy, no image grid) --- */
+    .about-inner{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
+    .about-img{position:relative;border-radius:6px;overflow:hidden;aspect-ratio:4/5;background:var(--bg-alt)}
+    .about-img-ph{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--text-muted)}
+    .about-img-ph svg{width:44px;height:44px;opacity:.25}
+    .about-rating{position:absolute;bottom:20px;right:20px;background:#fff;border-radius:6px;padding:14px 18px;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.1)}
+    .about-rating-num{font-family:var(--font-head);font-size:2rem;font-weight:700;color:var(--primary);line-height:1}
+    .about-rating-stars{color:var(--accent);font-size:.8rem;margin:3px 0}
+    .about-rating-count{font-size:.68rem;color:var(--text-muted)}
+    .about-label{font-size:.7rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+    .about-title{font-family:var(--font-head);font-size:2.2rem;font-weight:700;color:var(--text);margin-bottom:20px;line-height:1.15}
+    .about-p{font-size:.93rem;color:var(--text-body);margin-bottom:14px;line-height:1.75}
+    .about-quote{font-family:var(--font-head);font-size:1.15rem;font-weight:500;color:var(--primary);border-left:3px solid var(--accent);padding-left:18px;margin-top:20px}
+
+    /* --- FEATURES / DIFERENCIAIS (bento grid) --- */
+    .feat-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:auto auto;gap:16px}
+    .feat-card{background:#fff;border-left:3px solid var(--accent);padding:28px 22px;transition:all .35s var(--ease)}
+    .feat-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.07)}
+    .feat-card:nth-child(1),.feat-card:nth-child(2){grid-column:span 2;padding:36px 28px}
+    .feat-card-icon{width:40px;height:40px;margin-bottom:12px;color:var(--accent)}
+    .feat-card-icon svg{width:100%;height:100%}
+    .feat-card h3{font-family:var(--font-head);font-size:.95rem;font-weight:600;color:var(--text);margin-bottom:6px}
+    .feat-card p{font-size:.8rem;color:var(--text-muted);line-height:1.55}
+
+    /* --- EXPERIENCES (horizontal cards stacked) --- */
+    .sec-dark{background:var(--bg-dark);color:var(--text-light)}
+    .exp-list{display:flex;flex-direction:column;gap:20px}
+    .exp-card{display:grid;grid-template-columns:200px 1fr;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:6px;overflow:hidden;transition:all .4s var(--ease)}
+    .exp-card:hover{background:rgba(255,255,255,.07);transform:translateX(6px)}
+    .exp-card-img{background:rgba(255,255,255,.05);min-height:120px;position:relative;overflow:hidden}
+    .exp-card-img img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform .5s var(--ease)}
+    .exp-card:hover .exp-card-img img{transform:scale(1.08)}
+    .exp-card-img svg{width:36px;height:36px;opacity:.6;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:var(--accent-light)}
+    .exp-card-body{padding:24px 28px;display:flex;flex-direction:column;justify-content:center}
+    .exp-card h3{font-family:var(--font-head);font-size:1.05rem;font-weight:600;color:#fff;margin-bottom:6px}
+    .exp-card p{font-size:.82rem;color:rgba(255,255,255,.55);line-height:1.55}
+
+    /* --- MENU / CARDÁPIO (list style, not grid) --- */
+    .menu-cats{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:36px}
+    .menu-cat{padding:9px 22px;border-radius:4px;font-size:.78rem;font-weight:600;letter-spacing:.5px;text-transform:uppercase;border:2px solid var(--border);color:var(--text-muted);transition:all .3s var(--ease)}
+    .menu-cat:hover{border-color:var(--primary);color:var(--primary)}
+    .menu-cat.active{background:var(--primary);border-color:var(--primary);color:#fff}
+    .menu-pnl{display:none}.menu-pnl.active{display:block}
+    .menu-list{display:flex;flex-direction:column}
+    .menu-row{display:flex;align-items:center;gap:16px;padding:18px 0;border-bottom:1px solid var(--border);transition:background .3s}
+    .menu-row:hover{background:rgba(15,46,61,.02)}
+    .menu-row:last-child{border-bottom:none}
+    .menu-row-thumb{width:56px;height:56px;border-radius:4px;overflow:hidden;flex-shrink:0;background:var(--bg-alt);display:flex;align-items:center;justify-content:center;color:var(--text-muted);opacity:.25}
+    .menu-row-thumb svg{width:22px;height:22px}
+    .menu-row-info{flex:1;min-width:0}
+    .menu-row-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+    .menu-row-name{font-family:var(--font-head);font-size:.92rem;font-weight:600;color:var(--text)}
+    .menu-row-price{font-weight:700;font-size:.9rem;color:var(--accent);white-space:nowrap}
+    .menu-row-price-dual{font-size:.78rem;font-weight:600;color:var(--accent);text-align:right;line-height:1.5}
+    .menu-row-price-dual small{display:block;font-weight:400;color:var(--text-muted)}
+    .menu-row-desc{font-size:.78rem;color:var(--text-muted);line-height:1.5;margin-top:2px}
+    .menu-row-obs{font-size:.72rem;color:var(--accent);font-weight:500;margin-top:3px}
+    .menu-row-tags{display:flex;gap:5px;margin-top:6px;flex-wrap:wrap}
+    .mtag{font-size:.6rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:2px 8px;border-radius:3px;background:var(--bg-alt);color:var(--primary)}
+    .mtag.destaque{background:var(--accent);color:#fff}
+    .mtag.mais-pedido{background:var(--primary);color:#fff}
+    .mtag.novo{background:#D4EDDA;color:#155724}
+    .mtag.promocao{background:#F8D7DA;color:#721C24}
+    .mtag.drink{background:#D1ECF1;color:#0C5460}
+
+    /* --- GALLERY (horizontal scroll) --- */
+    .gal-scroll{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:12px;scrollbar-width:thin;scrollbar-color:var(--border) transparent}
+    .gal-scroll::-webkit-scrollbar{height:6px}
+    .gal-scroll::-webkit-scrollbar-track{background:transparent}
+    .gal-scroll::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+    .gal-item{flex:0 0 340px;aspect-ratio:4/3;border-radius:6px;overflow:hidden;scroll-snap-align:start;position:relative;background:var(--bg-alt);cursor:pointer}
+    .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+    .gal-item:hover img{transform:scale(1.05)}
+    .gal-item-ph{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--text-muted);opacity:.3}
+    .gal-item-ph svg{width:28px;height:28px}
+    .gal-item-ph span{font-size:.72rem}
+
+    /* --- SCHEDULE --- */
+    .sched-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .sched-card{background:#fff;border-left:3px solid var(--accent);padding:24px 20px;transition:all .35s var(--ease)}
+    .sched-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.06)}
+    .sched-icon{width:36px;height:36px;margin-bottom:10px;color:var(--accent)}
+    .sched-icon svg{width:100%;height:100%}
+    .sched-day{font-family:var(--font-head);font-size:.95rem;font-weight:600;color:var(--primary);margin-bottom:3px}
+    .sched-title{font-weight:600;font-size:.88rem;color:var(--text);margin-bottom:6px}
+    .sched-desc{font-size:.78rem;color:var(--text-muted);line-height:1.5}
+
+    /* --- EVENTS --- */
+    .ev-layout{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+    .ev-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .ev-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:6px;padding:22px;text-align:center;transition:all .35s var(--ease)}
+    .ev-card:hover{background:rgba(255,255,255,.07);transform:translateY(-2px)}
+    .ev-card-icon{width:32px;height:32px;margin:0 auto 10px;color:var(--accent-light)}
+    .ev-card-icon svg{width:100%;height:100%}
+    .ev-card h3{font-family:var(--font-head);font-size:.9rem;font-weight:600;color:#fff;margin-bottom:5px}
+    .ev-card p{font-size:.72rem;color:rgba(255,255,255,.5);line-height:1.5}
+
+    /* --- HOURS (compact table) --- */
+    .hours-table{display:flex;background:#fff;border-radius:6px;overflow:hidden;border:1px solid var(--border)}
+    .hours-cell{flex:1;text-align:center;padding:20px 8px;border-right:1px solid var(--border);transition:all .3s}
+    .hours-cell:last-child{border-right:none}
+    .hours-cell.today{background:var(--primary);color:#fff}
+    .hours-cell.closed{opacity:.4}
+    .hours-day{font-family:var(--font-head);font-size:.95rem;font-weight:600;color:var(--primary);margin-bottom:4px}
+    .hours-cell.today .hours-day{color:#fff}
+    .hours-time{font-size:.72rem;font-weight:500;color:var(--text-muted)}
+    .hours-cell.today .hours-time{color:rgba(255,255,255,.75)}
+    .hours-badge{font-size:.55rem;font-weight:700;text-transform:uppercase;letter-spacing:.3px;background:var(--accent);color:#fff;padding:2px 7px;border-radius:3px;margin-top:6px;display:inline-block}
+
+    /* --- TESTIMONIALS (big quote block) --- */
+    .test-block{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+    .test-platforms{display:flex;gap:24px;margin-bottom:40px;flex-wrap:wrap}
+    .test-plat{display:flex;align-items:center;gap:14px;background:#fff;padding:18px 24px;border-radius:6px;border:1px solid var(--border)}
+    .test-plat-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center}
+    .test-plat-icon.g{background:#fff;border:1px solid #e0e0e0}
+    .test-plat-icon.f{background:#1877F2;color:#fff}
+    .test-plat-icon svg{width:20px;height:20px}
+    .test-plat-num{font-family:var(--font-head);font-size:1.6rem;font-weight:700;color:var(--text);line-height:1}
+    .test-plat-stars{color:var(--accent);font-size:.75rem}
+    .test-plat-count{font-size:.68rem;color:var(--text-muted)}
+    .test-card{background:#fff;border-left:3px solid var(--accent);padding:24px;transition:all .3s var(--ease)}
+    .test-card:hover{box-shadow:0 8px 24px rgba(0,0,0,.06);transform:translateY(-2px)}
+    .test-stars{color:var(--accent);font-size:.82rem;margin-bottom:10px}
+    .test-text{font-size:.88rem;color:var(--text-body);line-height:1.7;margin-bottom:14px;font-style:italic}
+    .test-author{display:flex;align-items:center;gap:8px}
+    .test-badge{width:24px;height:24px;border-radius:5px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .test-badge.g{background:#fff;border:1px solid #e0e0e0}
+    .test-badge.f{background:#1877F2;color:#fff}
+    .test-badge svg{width:12px;height:12px}
+    .test-author-name{font-size:.78rem;font-weight:600;color:var(--text)}
+
+    /* --- INSTAGRAM --- */
+    .insta-wrap{text-align:center}
+    .insta-handle{font-family:var(--font-head);font-size:1.6rem;font-weight:700;margin-bottom:6px}
+    .insta-handle a{color:var(--primary);transition:color .3s}
+    .insta-handle a:hover{color:var(--accent)}
+    .insta-sub{font-size:.9rem;color:var(--text-muted);margin-bottom:28px}
+    .insta-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-bottom:28px}
+    .insta-item{aspect-ratio:1;background:var(--bg-alt);border-radius:4px;overflow:hidden;transition:all .35s var(--ease)}
+    .insta-item:hover{transform:scale(1.03);opacity:.85}
+    .insta-item img{width:100%;height:100%;object-fit:cover}
+    .insta-item-ph{width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--text-muted);opacity:.15}
+    .insta-item-ph svg{width:24px;height:24px}
+
+    /* --- CONTACT --- */
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+    .contact-details{display:flex;flex-direction:column;gap:22px}
+    .contact-row{display:flex;align-items:flex-start;gap:14px}
+    .contact-icon{width:40px;height:40px;border-radius:4px;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .contact-icon svg{width:18px;height:18px}
+    .contact-lbl{display:block;font-size:.68rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);margin-bottom:1px}
+    .contact-val{font-size:.92rem;color:var(--text)}
+    .contact-btns{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+    .contact-map{border-radius:6px;overflow:hidden;background:var(--bg-alt);min-height:340px}
+    .contact-map iframe{width:100%;height:100%;min-height:340px;border:0}
+
+    /* --- LIGHTBOX --- */
+    .lb{display:none;position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,.92);align-items:center;justify-content:center;animation:fadein .3s}
+    .lb.open{display:flex}
+    .lb img{max-width:90vw;max-height:85vh;object-fit:contain;border-radius:4px}
+    .lb-x{position:absolute;top:20px;right:20px;width:40px;height:40px;border-radius:4px;background:rgba(255,255,255,.1);color:#fff;font-size:22px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .3s}
+    .lb-x:hover{background:rgba(255,255,255,.2)}
+    @keyframes fadein{from{opacity:0}to{opacity:1}}
+
+    /* --- FOOTER (two blocks) --- */
+    .ft{background:var(--bg-darker);color:var(--text-light);padding:72px 0 0}
+    .ft-inner{display:grid;grid-template-columns:1.5fr 1fr;gap:48px}
+    .ft-brand{font-family:var(--font-head);font-size:1.5rem;font-weight:700;color:#fff;margin-bottom:10px;letter-spacing:-0.5px}
+    .ft-desc{font-size:.82rem;color:rgba(255,255,255,.4);line-height:1.65;margin-bottom:18px;max-width:400px}
+    .ft-social{display:flex;gap:10px}
+    .ft-social a{width:36px;height:36px;border-radius:4px;border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.5);display:flex;align-items:center;justify-content:center;transition:all .3s}
+    .ft-social a:hover{border-color:var(--accent);color:var(--accent)}
+    .ft-social a svg{width:16px;height:16px}
+    .ft-links{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .ft-col-title{font-family:var(--font-head);font-size:.85rem;font-weight:600;color:#fff;margin-bottom:14px}
+    .ft-col a{display:block;font-size:.8rem;color:rgba(255,255,255,.4);margin-bottom:8px;transition:color .3s}
+    .ft-col a:hover{color:var(--accent)}
+    .ft-bottom{margin-top:40px;padding:20px 0;border-top:1px solid rgba(255,255,255,.06);text-align:center;font-size:.72rem;color:rgba(255,255,255,.25)}
+
+    /* --- RESPONSIVE TABLET --- */
+    @media(max-width:1024px){
+        section{padding:72px 0}
+        .hdr-nav{display:none}
+        .hamburger{display:block}
+        .hero{grid-template-columns:1fr;min-height:100vh}
+        .hero-text{max-width:100%;padding:120px 28px 60px;text-align:center;align-items:center}
+        .hero-badge{margin-left:auto;margin-right:auto}
+        .hero-desc{margin-left:auto;margin-right:auto}
+        .hero-ctas{justify-content:center}
+        .hero-img{position:absolute;inset:0;z-index:0}
+        .hero-img-overlay{background:linear-gradient(180deg,rgba(15,46,61,.7) 0%,rgba(15,46,61,.85) 60%,var(--bg-dark) 100%)}
+        .hero-text{position:relative;z-index:1}
+        .about-inner{grid-template-columns:1fr}
+        .feat-grid{grid-template-columns:repeat(2,1fr)}
+        .feat-card:nth-child(1),.feat-card:nth-child(2){grid-column:span 1}
+        .exp-card{grid-template-columns:140px 1fr}
+        .sched-grid{grid-template-columns:repeat(2,1fr)}
+        .ev-layout{grid-template-columns:1fr}
+        .hours-table{flex-wrap:wrap}
+        .hours-cell{flex:0 0 calc(25% - 1px)}
+        .test-block{grid-template-columns:1fr}
+        .insta-grid{grid-template-columns:repeat(3,1fr)}
+        .contact-grid{grid-template-columns:1fr}
+        .ft-inner{grid-template-columns:1fr}
+        .sec-title{font-size:2rem}
+        .hero h1{font-size:3rem}
+    }
+
+    /* --- RESPONSIVE MOBILE --- */
+    @media(max-width:640px){
+        section{padding:56px 0}
+        .hero h1{font-size:2.2rem}
+        .hero-ctas{flex-direction:column;align-items:stretch}
+        .hero-ctas .btn{justify-content:center}
+        .sec-title{font-size:1.6rem}
+        .about-title{font-size:1.5rem}
+        .feat-grid{grid-template-columns:1fr}
+        .exp-card{grid-template-columns:1fr}
+        .exp-card-img{min-height:80px}
+        .gal-item{flex:0 0 85vw}
+        .sched-grid{grid-template-columns:1fr}
+        .ev-grid{grid-template-columns:1fr}
+        .hours-table{flex-direction:column}
+        .hours-cell{flex:none;border-right:none;border-bottom:1px solid var(--border);padding:12px 16px;display:flex;justify-content:space-between;align-items:center}
+        .hours-cell:last-child{border-bottom:none}
+        .hours-badge{margin-top:0;margin-left:8px}
+        .insta-grid{grid-template-columns:repeat(3,1fr)}
+        .contact-btns{flex-direction:column}
+        .contact-btns .btn{width:100%;justify-content:center}
+        .ft-links{grid-template-columns:1fr}
+    }
+    </style>
+</head>
+<body>
+
+    <div class="preloader" id="preloader">
+        <div class="preloader-name">Empório Gourmet</div>
+        <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    </div>
+
+    <div class="promo" id="promoBanner">
+        <span id="promoBannerText"></span>
+        <button class="promo-x" id="promoBannerClose">&times;</button>
+    </div>
+
+    <header class="hdr" id="siteHeader">
+        <a href="#" class="hdr-logo">Empório Gourmet</a>
+        <nav class="hdr-nav">
+            <a href="#sobre">Sobre</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#experiencias">Experiências</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#horarios">Horários</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <a href="https://wa.me/551632528621" class="hdr-wa" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.607.607l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+            WhatsApp
+        </a>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </header>
+
+    <div class="mob-menu" id="mobileMenu">
+        <a href="#sobre">Sobre</a><a href="#cardapio">Cardápio</a><a href="#experiencias">Experiências</a>
+        <a href="#galeria">Galeria</a><a href="#horarios">Horários</a><a href="#contato">Contato</a>
+    </div>
+
+    <!-- HERO (split layout) -->
+    <section class="hero" id="hero">
+        <div class="hero-text">
+            <div class="hero-badge">Bar & Restaurante · Taquaritinga-SP</div>
+            <h1 id="heroTitle">Empório Gourmet</h1>
+            <p class="hero-phrase" id="heroPhrase">Onde o sabor encontra a boa companhia</p>
+            <p class="hero-desc" id="heroDesc">Drinks autorais, cervejas geladas, porções irresistíveis e o melhor ambiente de Taquaritinga para curtir com quem você gosta.</p>
+            <div class="hero-ctas">
+                <a href="#cardapio" class="btn btn-accent" id="heroCta1">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+                    Ver Cardápio
+                </a>
+                <a href="https://wa.me/551632528621" class="btn btn-wa" target="_blank" rel="noopener" id="heroCta2">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.607.607l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+                    WhatsApp
+                </a>
+                <a href="#contato" class="btn btn-ghost-light" id="heroCta3">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Como Chegar
+                </a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <div class="hero-img-inner" id="heroBg"></div>
+            <div class="hero-img-overlay"></div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+        <div class="wrap">
+            <div class="about-inner">
+                <div class="about-img rv rv-up">
+                    <img src="imagens/sobre.png" alt="Salão interno do Empório Gourmet" style="width:100%;height:100%;object-fit:cover">
+                    <div class="about-rating">
+                        <div class="about-rating-num">4,4</div>
+                        <div class="about-rating-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                        <div class="about-rating-count">158 avaliações</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="about-label rv">Quem Somos</div>
+                    <h2 class="about-title rv rv-d1" id="aboutTitle">Muito mais que um bar e restaurante</h2>
+                    <p class="about-p rv rv-d2" id="aboutText1">O Empório Gourmet é o ponto de encontro de Taquaritinga. Um espaço pensado para quem busca drinks bem feitos, cervejas sempre geladas, porções generosas e um ambiente que convida a ficar.</p>
+                    <p class="about-p rv rv-d3" id="aboutText2">Aqui, cada detalhe importa: do atendimento atencioso à seleção dos ingredientes, da playlist ao clima acolhedor que transforma qualquer noite em uma experiência.</p>
+                    <blockquote class="about-quote rv rv-d4" id="aboutHighlight">O lugar certo para brindar os bons momentos.</blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section style="background:var(--bg-alt)" id="diferenciais">
+        <div class="wrap">
+            <div class="sec-head rv">
+                <div class="sec-label">Por que o Empório</div>
+                <h2 class="sec-title">O que nos torna especiais</h2>
+                <p class="sec-sub">Cada detalhe pensado para transformar seu momento em uma experiência completa</p>
+            </div>
+            <div class="feat-grid" id="featuresGrid"></div>
+        </div>
+    </section>
+
+    <!-- EXPERIÊNCIAS -->
+    <section class="sec-dark" id="experiencias">
+        <div class="wrap">
+            <div class="sec-head rv">
+                <div class="sec-label">Momentos</div>
+                <h2 class="sec-title">Cada visita, uma nova experiência</h2>
+                <p class="sec-sub">Mais que drinks e porções — são encontros e noites que ficam na memória</p>
+            </div>
+            <div class="exp-list" id="experiencesGrid"></div>
+        </div>
+    </section>
+
+    <!-- CARDÁPIO -->
+    <section id="cardapio">
+        <div class="wrap">
+            <div class="sec-head rv">
+                <div class="sec-label">Nosso Cardápio</div>
+                <h2 class="sec-title">O que te espera no Empório</h2>
+                <p class="sec-sub">Porções irresistíveis, drinks autorais e pratos que surpreendem</p>
+            </div>
+            <div class="menu-cats rv" id="menuTabs"></div>
+            <div id="menuPanels"></div>
+        </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section style="background:var(--bg-alt)" id="galeria">
+        <div class="wrap">
+            <div class="sec-head rv">
+                <div class="sec-label">Nosso Espaço</div>
+                <h2 class="sec-title">Conheça o Ambiente</h2>
+                <p class="sec-sub">Um espaço pensado para os melhores momentos</p>
+            </div>
+            <div class="gal-scroll rv rv-d1" id="galleryScroll">
+                <div class="gal-item" onclick="openLightbox(this)"><img src="imagens/galeria/fachada-diurna.png" alt="Fachada diurna do Empório Gourmet com mesas externas" loading="lazy"></div>
+                <div class="gal-item" onclick="openLightbox(this)"><img src="imagens/galeria/area-externa-noite.png" alt="Área externa noturna com luzes decorativas" loading="lazy"></div>
+                <div class="gal-item" onclick="openLightbox(this)"><img src="imagens/galeria/drink-hortela.png" alt="Drink refrescante com hortelã" loading="lazy"></div>
+                <div class="gal-item" onclick="openLightbox(this)"><img src="imagens/galeria/porcoes-drinks.png" alt="Porções e drinks servidos na mesa" loading="lazy"></div>
+                <div class="gal-item" onclick="openLightbox(this)"><img src="imagens/galeria/area-externa-dia.png" alt="Área externa com guarda-sóis durante o dia" loading="lazy"></div>
+                <div class="gal-item" onclick="openLightbox(this)"><img src="imagens/galeria/corredor-drinks.png" alt="Corredor decorado com quadros de drinks" loading="lazy"></div>
+                <div class="gal-item" onclick="openLightbox(this)"><img src="imagens/galeria/prateleira-vinhos.png" alt="Prateleira de vinhos e bebidas selecionadas" loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAMAÇÃO -->
+    <section id="programacao">
+        <div class="wrap">
+            <div class="sec-head rv">
+                <div class="sec-label">Programação</div>
+                <h2 class="sec-title">Sempre tem um motivo pra vir</h2>
+                <p class="sec-sub">Confira a programação da semana</p>
+            </div>
+            <div class="sched-grid" id="scheduleGrid"></div>
+        </div>
+    </section>
+
+    <!-- EVENTOS -->
+    <section class="sec-dark" id="eventos">
+        <div class="wrap">
+            <div class="ev-layout">
+                <div>
+                    <div class="sec-label rv">Eventos</div>
+                    <h2 class="sec-title rv rv-d1">Celebre no Empório</h2>
+                    <p class="sec-sub rv rv-d2">Espaço versátil e acolhedor para tornar suas comemorações ainda mais especiais.</p>
+                    <div style="margin-top:28px" class="rv rv-d3">
+                        <a href="https://wa.me/551632528621?text=Olá!%20Gostaria%20de%20saber%20sobre%20eventos" class="btn btn-accent" target="_blank" rel="noopener">Falar sobre eventos</a>
+                    </div>
+                </div>
+                <div class="ev-grid" id="eventsGrid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HORÁRIOS -->
+    <section style="background:var(--bg-alt)" id="horarios">
+        <div class="wrap">
+            <div class="sec-head centered rv">
+                <div class="sec-label">Funcionamento</div>
+                <h2 class="sec-title">Horários de Atendimento</h2>
+            </div>
+            <div class="hours-table rv rv-d1" id="hoursTable"></div>
+        </div>
+    </section>
+
+    <!-- PROVA SOCIAL -->
+    <section id="depoimentos">
+        <div class="wrap">
+            <div class="sec-head centered rv">
+                <div class="sec-label">O que dizem</div>
+                <h2 class="sec-title">Quem vem, aprova</h2>
+                <p class="sec-sub">Avaliações reais de quem já viveu a experiência Empório Gourmet</p>
+            </div>
+            <div class="test-platforms rv rv-d1">
+                <div class="test-plat">
+                    <div class="test-plat-icon g"><svg viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div>
+                    <div><div class="test-plat-num">4,4</div><div class="test-plat-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div><div class="test-plat-count">158 avaliações</div></div>
+                </div>
+                <div class="test-plat">
+                    <div class="test-plat-icon f"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></div>
+                    <div><div class="test-plat-num">4,7</div><div class="test-plat-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="test-plat-count">116 votos</div></div>
+                </div>
+            </div>
+            <div class="test-block" id="testimonialsGrid"></div>
+        </div>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section style="background:var(--bg-alt)" id="instagram">
+        <div class="wrap">
+            <div class="insta-wrap">
+                <div class="sec-label rv">Siga-nos</div>
+                <div class="insta-handle rv rv-d1"><a href="https://www.instagram.com/emporio.gourmet/" target="_blank">@emporio.gourmet</a></div>
+                <p class="insta-sub rv rv-d2">Novidades, promoções e bastidores no Instagram</p>
+                <div class="insta-grid rv rv-d3">
+                    <div class="insta-item"><div class="insta-item-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></div></div>
+                    <div class="insta-item"><div class="insta-item-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></div></div>
+                    <div class="insta-item"><div class="insta-item-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></div></div>
+                    <div class="insta-item"><div class="insta-item-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></div></div>
+                    <div class="insta-item"><div class="insta-item-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></div></div>
+                    <div class="insta-item"><div class="insta-item-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></div></div>
+                </div>
+                <a href="https://www.instagram.com/emporio.gourmet/" class="btn btn-dark" target="_blank">Seguir no Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+        <div class="wrap">
+            <div class="sec-head centered rv">
+                <div class="sec-label">Contato</div>
+                <h2 class="sec-title">Venha nos visitar</h2>
+                <p class="sec-sub">Estamos no coração de Taquaritinga</p>
+            </div>
+            <div class="contact-grid">
+                <div class="rv">
+                    <div class="contact-details">
+                        <div class="contact-row">
+                            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                            <div><span class="contact-lbl">Endereço</span><span class="contact-val">Av. Paulo Roberto Scandar, 695 - Centro, Taquaritinga - SP</span></div>
+                        </div>
+                        <div class="contact-row">
+                            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+                            <div><span class="contact-lbl">Telefone / WhatsApp</span><span class="contact-val">(16) 3252-8621</span></div>
+                        </div>
+                        <div class="contact-row">
+                            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></div>
+                            <div><span class="contact-lbl">Instagram</span><span class="contact-val">@emporio.gourmet</span></div>
+                        </div>
+                    </div>
+                    <div class="contact-btns">
+                        <a href="https://wa.me/551632528621" class="btn btn-wa" target="_blank">WhatsApp</a>
+                        <a href="tel:+551632528621" class="btn btn-dark">Ligar</a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=-21.4050,-48.5087" class="btn btn-ghost" target="_blank">Como Chegar</a>
+                    </div>
+                </div>
+                <div class="contact-map rv rv-d1">
+                    <iframe src="https://www.google.com/maps?q=-21.4050,-48.5087&output=embed" width="100%" height="100%" style="border:0;min-height:340px" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="ft">
+        <div class="wrap">
+            <div class="ft-inner">
+                <div>
+                    <div class="ft-brand">Empório Gourmet</div>
+                    <p class="ft-desc">Drinks, porções e bons momentos em Taquaritinga. O lugar certo para estar com quem você gosta.</p>
+                    <div class="ft-social">
+                        <a href="https://www.instagram.com/emporio.gourmet/" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+                        <a href="https://wa.me/551632528621" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.607.607l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a>
+                    </div>
+                </div>
+                <div class="ft-links">
+                    <div>
+                        <div class="ft-col-title">Navegação</div>
+                        <div class="ft-col">
+                            <a href="#sobre">Sobre</a><a href="#cardapio">Cardápio</a><a href="#experiencias">Experiências</a><a href="#galeria">Galeria</a><a href="#eventos">Eventos</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ft-col-title">Contato</div>
+                        <div class="ft-col">
+                            <a href="tel:+551632528621">(16) 3252-8621</a><a href="https://wa.me/551632528621" target="_blank">WhatsApp</a><a href="https://www.instagram.com/emporio.gourmet/" target="_blank">Instagram</a><a href="https://www.google.com/maps/dir/?api=1&destination=-21.4050,-48.5087" target="_blank">Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-bottom">&copy; 2025 Empório Gourmet. Todos os direitos reservados. | Taquaritinga - SP</div>
+        </div>
+    </footer>
+
+    <div class="lb" id="lightbox" onclick="closeLightbox()">
+        <button class="lb-x" aria-label="Fechar">&times;</button>
+        <img id="lightboxImg" src="" alt="Foto ampliada">
+    </div>
+
+    <script src="dados/cardapio.js"></script>
+    <script src="dados/promocoes.js"></script>
+    <script src="dados/site.js"></script>
+
+    <script>
+    (function(){
+        'use strict';
+
+        window.addEventListener('load',function(){setTimeout(function(){document.getElementById('preloader').classList.add('hidden')},1600)});
+        setTimeout(function(){var p=document.getElementById('preloader');if(p&&!p.classList.contains('hidden'))p.classList.add('hidden')},4000);
+
+        var DATA_PATHS={cardapio:'dados/cardapio.json',promocoes:'dados/promocoes.json',site:'dados/site.json'};
+
+        async function fetchJSON(path){
+            try{var r=await fetch(path);if(!r.ok)throw new Error('HTTP '+r.status);return await r.json()}
+            catch(e){
+                if(window.__DATA__){
+                    if(path.indexOf('cardapio')!==-1&&window.__DATA__.cardapio)return window.__DATA__.cardapio;
+                    if(path.indexOf('promocoes')!==-1&&window.__DATA__.promocoes)return window.__DATA__.promocoes;
+                    if(path.indexOf('site')!==-1&&window.__DATA__.site)return window.__DATA__.site;
+                }
+                return null;
+            }
+        }
+
+        function getDia(){return['domingo','segunda','terca','quarta','quinta','sexta','sabado'][new Date().getDay()]}
+        function getDiaIdx(){return new Date().getDay()}
+
+        var ICONS={
+            utensils:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 00-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg>',
+            flame:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/></svg>',
+            glass:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 22h8"/><path d="M12 11v11"/><path d="m19 3-7 8-7-8h14z"/></svg>',
+            star:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>',
+            calendar:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>',
+            sun:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>',
+            cocktail:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 22h8"/><path d="M12 11v11"/><path d="M3 2l9 9 9-9"/><path d="M3 2h18"/></svg>',
+            beer:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 11h1a3 3 0 010 6h-1"/><path d="M5 6h12v13a2 2 0 01-2 2H7a2 2 0 01-2-2V6z"/><path d="M5 6V4a2 2 0 012-2h8a2 2 0 012 2v2"/></svg>',
+            snowflake:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg>',
+            music:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>'
+        };
+        function icon(n){return ICONS[n]||ICONS.star}
+
+        var TAG_LABELS={'destaque':'Destaque','mais-pedido':'Mais Pedido','especial':'Especial','novo':'Novo','promocao':'Promoção','happy-hour':'Happy Hour','drink':'Drink','chef':'Sugestão do Chef'};
+
+        function renderPromoBanner(d){
+            if(!d||!d.promocoes_dia)return;
+            var dia=getDia(),promos=d.promocoes_dia[dia];
+            if(!promos||!promos.length)return;
+            if(sessionStorage.getItem('promoClosed')===dia)return;
+            var b=document.getElementById('promoBanner'),t=document.getElementById('promoBannerText');
+            t.textContent=promos[0].texto;
+            b.classList.add('on');document.body.classList.add('has-promo');
+            document.getElementById('promoBannerClose').addEventListener('click',function(e){
+                e.stopPropagation();b.classList.remove('on');document.body.classList.remove('has-promo');
+                sessionStorage.setItem('promoClosed',dia);
+            });
+        }
+
+        function renderMenu(d){
+            if(!d||!d.categorias)return;
+            var cats=d.categorias.filter(function(c){return c.itens&&c.itens.length>0}).sort(function(a,b){return a.ordem-b.ordem});
+            if(!cats.length)return;
+            var th='';cats.forEach(function(c,i){th+='<button class="menu-cat'+(i===0?' active':'')+'" data-tab="'+c.id+'">'+c.nome+'</button>'});
+            document.getElementById('menuTabs').innerHTML=th;
+            var ph='';
+            cats.forEach(function(c,i){
+                ph+='<div class="menu-pnl'+(i===0?' active':'')+'" data-panel="'+c.id+'"><div class="menu-list">';
+                c.itens.forEach(function(it){
+                    if(!it.disponivel)return;
+                    ph+='<div class="menu-row rv">';
+                    ph+='<div class="menu-row-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/></svg></div>';
+                    ph+='<div class="menu-row-info"><div class="menu-row-top"><span class="menu-row-name">'+it.nome+'</span>';
+                    if(it.preco){ph+='<span class="menu-row-price">R$ '+it.preco.toFixed(2).replace('.',',')+'</span>'}
+                    else if(it.preco_meia||it.preco_inteira){
+                        ph+='<div class="menu-row-price-dual">';
+                        if(it.preco_meia)ph+='<small>Meia</small>R$ '+it.preco_meia.toFixed(2).replace('.',',');
+                        if(it.preco_meia&&it.preco_inteira)ph+='<br>';
+                        if(it.preco_inteira)ph+='<small>Inteira</small>R$ '+it.preco_inteira.toFixed(2).replace('.',',');
+                        ph+='</div>';
+                    }
+                    ph+='</div><p class="menu-row-desc">'+it.descricao+'</p>';
+                    if(it.observacao)ph+='<p class="menu-row-obs">'+it.observacao+'</p>';
+                    if(it.tags&&it.tags.length){ph+='<div class="menu-row-tags">';it.tags.forEach(function(t){ph+='<span class="mtag '+t+'">'+(TAG_LABELS[t]||t)+'</span>'});ph+='</div>'}
+                    ph+='</div></div>';
+                });
+                ph+='</div></div>';
+            });
+            document.getElementById('menuPanels').innerHTML=ph;
+            document.querySelectorAll('.menu-cat').forEach(function(tab){
+                tab.addEventListener('click',function(){
+                    document.querySelectorAll('.menu-cat').forEach(function(t){t.classList.remove('active')});
+                    document.querySelectorAll('.menu-pnl').forEach(function(p){p.classList.remove('active')});
+                    tab.classList.add('active');
+                    var pnl=document.querySelector('[data-panel="'+tab.dataset.tab+'"]');
+                    if(pnl){pnl.classList.add('active');pnl.querySelectorAll('.rv').forEach(function(el){el.classList.remove('vis');setTimeout(function(){observer.observe(el)},50)})}
+                });
+            });
+        }
+
+        function renderDiferenciais(d){
+            if(!d||!d.diferenciais)return;var h='';
+            d.diferenciais.forEach(function(it,i){
+                h+='<div class="feat-card rv'+(i>0?' rv-d'+Math.min(i,4):'')+'">';
+                h+='<div class="feat-card-icon">'+icon(it.icone)+'</div>';
+                h+='<h3>'+it.titulo+'</h3><p>'+it.descricao+'</p></div>';
+            });
+            document.getElementById('featuresGrid').innerHTML=h;
+        }
+
+        function renderExperiencias(d){
+            if(!d||!d.experiencias)return;var h='';
+            var expImgs=['imagens/galeria/drink-hortela.png','imagens/galeria/area-externa-noite.png','imagens/galeria/corredor-drinks.png','imagens/galeria/fachada-diurna.png','imagens/galeria/porcoes-drinks.png'];
+            d.experiencias.forEach(function(it,i){
+                h+='<div class="exp-card rv'+(i>0?' rv-d'+Math.min(i,4):'')+'">';
+                var imgSrc=expImgs[i]||'';
+                h+='<div class="exp-card-img">'+(imgSrc?'<img src="'+imgSrc+'" alt="'+it.titulo+'" loading="lazy">':icon(it.icone))+'</div>';
+                h+='<div class="exp-card-body"><h3>'+it.titulo+'</h3><p>'+it.descricao+'</p></div></div>';
+            });
+            document.getElementById('experiencesGrid').innerHTML=h;
+        }
+
+        function renderSchedule(d){
+            if(!d||!d.programacao_semana)return;
+            var items=d.programacao_semana.filter(function(p){return p.ativo});
+            if(!items.length){document.getElementById('programacao').style.display='none';return}
+            var h='';items.forEach(function(it,i){
+                h+='<div class="sched-card rv'+(i>0?' rv-d'+Math.min(i,3):'')+'">';
+                h+='<div class="sched-icon">'+icon(it.icone)+'</div>';
+                h+='<div class="sched-day">'+it.dia+'</div>';
+                h+='<div class="sched-title">'+it.titulo+'</div>';
+                h+='<p class="sched-desc">'+it.descricao+'</p></div>';
+            });
+            document.getElementById('scheduleGrid').innerHTML=h;
+        }
+
+        function renderEvents(d){
+            if(!d||!d.eventos)return;
+            var items=d.eventos.filter(function(e){return e.ativo});
+            if(!items.length)return;var h='';
+            items.forEach(function(it,i){
+                h+='<div class="ev-card rv'+(i>0?' rv-d'+Math.min(i,3):'')+'">';
+                h+='<div class="ev-card-icon">'+icon(it.icone)+'</div>';
+                h+='<h3>'+it.titulo+'</h3><p>'+it.descricao+'</p></div>';
+            });
+            document.getElementById('eventsGrid').innerHTML=h;
+        }
+
+        function renderHours(d){
+            if(!d||!d.horarios)return;
+            var today=getDiaIdx(),map=[6,0,1,2,3,4,5],ji=map[today],h='';
+            d.horarios.forEach(function(dia,i){
+                var cls='hours-cell';
+                if(i===ji)cls+=' today';
+                if(!dia.aberto)cls+=' closed';
+                h+='<div class="'+cls+'">';
+                h+='<div class="hours-day">'+dia.abreviado+'</div>';
+                h+='<div class="hours-time">'+dia.horario+'</div>';
+                if(dia.badge)h+='<div class="hours-badge">'+dia.badge+'</div>';
+                h+='</div>';
+            });
+            document.getElementById('hoursTable').innerHTML=h;
+        }
+
+        function renderTestimonials(d){
+            if(!d||!d.depoimentos)return;var h='';
+            d.depoimentos.forEach(function(dep,i){
+                var stars='';for(var s=0;s<5;s++)stars+=s<dep.estrelas?'&#9733;':'&#9734;';
+                var pc=dep.plataforma||'google',pi=pc==='facebook'
+                    ?'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>'
+                    :'<svg viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>';
+                h+='<div class="test-card rv'+(i%2?' rv-d1':'')+'">';
+                h+='<div class="test-stars">'+stars+'</div>';
+                h+='<p class="test-text">"'+dep.texto+'"</p>';
+                h+='<div class="test-author"><div class="test-badge '+(pc==='facebook'?'f':'g')+'">'+pi+'</div>';
+                h+='<span class="test-author-name">'+dep.autor+'</span></div></div>';
+            });
+            document.getElementById('testimonialsGrid').innerHTML=h;
+        }
+
+        function renderHeroTexts(d){
+            if(!d||!d.hero)return;
+            document.getElementById('heroTitle').textContent=d.hero.titulo;
+            document.getElementById('heroPhrase').textContent=d.hero.frase;
+            document.getElementById('heroDesc').textContent=d.hero.subtitulo;
+        }
+
+        function renderAboutTexts(d){
+            if(!d||!d.sobre)return;
+            document.getElementById('aboutTitle').textContent=d.sobre.titulo;
+            document.getElementById('aboutText1').textContent=d.sobre.texto;
+            document.getElementById('aboutText2').textContent=d.sobre.texto2;
+            document.getElementById('aboutHighlight').textContent=d.sobre.destaque;
+        }
+
+        var observer;
+        function initReveal(){
+            observer=new IntersectionObserver(function(entries){
+                entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');observer.unobserve(e.target)}});
+            },{threshold:.1,rootMargin:'0px 0px -30px 0px'});
+            document.querySelectorAll('.rv').forEach(function(el){observer.observe(el)});
+        }
+
+        var hdr=document.getElementById('siteHeader');
+        window.addEventListener('scroll',function(){hdr.classList.toggle('solid',window.pageYOffset>50)},{passive:true});
+
+        var heroBg=document.getElementById('heroBg');
+        window.addEventListener('scroll',function(){if(window.pageYOffset<window.innerHeight)heroBg.style.transform='scale(1.05) translateY('+(window.pageYOffset*.12)+'px)'},{passive:true});
+
+        var ham=document.getElementById('hamburger'),mob=document.getElementById('mobileMenu');
+        ham.addEventListener('click',function(){ham.classList.toggle('open');mob.classList.toggle('open');document.body.style.overflow=mob.classList.contains('open')?'hidden':''});
+        mob.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){ham.classList.remove('open');mob.classList.remove('open');document.body.style.overflow=''})});
+
+        document.querySelectorAll('a[href^="#"]').forEach(function(a){
+            a.addEventListener('click',function(e){
+                var t=document.querySelector(this.getAttribute('href'));
+                if(t){e.preventDefault();var off=72;if(document.body.classList.contains('has-promo'))off+=38;
+                window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-off,behavior:'smooth'})}
+            });
+        });
+
+        var secs=document.querySelectorAll('section[id]'),navs=document.querySelectorAll('.hdr-nav a');
+        window.addEventListener('scroll',function(){
+            var sp=window.pageYOffset+100;
+            secs.forEach(function(s){
+                if(sp>=s.offsetTop&&sp<s.offsetTop+s.offsetHeight){
+                    var id=s.getAttribute('id');
+                    navs.forEach(function(l){l.classList.toggle('active',l.getAttribute('href')==='#'+id)});
+                }
+            });
+        },{passive:true});
+
+        window.openLightbox=function(el){var img=el.querySelector('img');if(!img)return;document.getElementById('lightboxImg').src=img.src;document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden'};
+        window.closeLightbox=function(){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow=''};
+        document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLightbox()});
+
+        async function init(){
+            var[cardapio,promocoes,site]=await Promise.all([fetchJSON(DATA_PATHS.cardapio),fetchJSON(DATA_PATHS.promocoes),fetchJSON(DATA_PATHS.site)]);
+            if(promocoes){renderPromoBanner(promocoes);renderSchedule(promocoes);renderEvents(promocoes)}
+            if(cardapio)renderMenu(cardapio);
+            if(site){renderHeroTexts(site);renderAboutTexts(site);renderDiferenciais(site);renderExperiencias(site);renderHours(site);renderTestimonials(site)}
+            initReveal();
+        }
+        init();
+    })();
+    </script>
+</body>
+</html>

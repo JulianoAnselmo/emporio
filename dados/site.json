@@ -1,0 +1,145 @@
+{
+  "hero": {
+    "titulo": "Empório Gourmet",
+    "frase": "Onde o sabor encontra a boa companhia",
+    "subtitulo": "Drinks autorais, cervejas geladas, porções irresistíveis e o melhor ambiente de Taquaritinga para curtir com quem você gosta.",
+    "ctas": {
+      "cardapio": "Ver Cardápio",
+      "whatsapp": "Chamar no WhatsApp",
+      "localizacao": "Como Chegar"
+    }
+  },
+  "sobre": {
+    "titulo": "Muito mais que um bar e restaurante",
+    "texto": "O Empório Gourmet é o ponto de encontro de Taquaritinga. Um espaço pensado para quem busca drinks bem feitos, cervejas sempre geladas, porções generosas e um ambiente que convida a ficar. Com área aberta e salão climatizado, o Empório é ideal tanto para o happy hour descontraído quanto para um jantar especial.",
+    "texto2": "Aqui, cada detalhe importa: do atendimento atencioso à seleção dos ingredientes, da playlist ao clima acolhedor que transforma qualquer noite em uma experiência. Venha conhecer e entenda por que o Empório virou referência na cidade.",
+    "destaque": "O lugar certo para brindar os bons momentos."
+  },
+  "diferenciais": [
+    {
+      "icone": "cocktail",
+      "titulo": "Drinks Autorais",
+      "descricao": "Carta de drinks exclusivos, preparados com ingredientes selecionados e apresentação impecável"
+    },
+    {
+      "icone": "beer",
+      "titulo": "Cerveja Sempre Gelada",
+      "descricao": "Variedade de rótulos artesanais e tradicionais, servidos na temperatura ideal"
+    },
+    {
+      "icone": "flame",
+      "titulo": "Porções Caprichadas",
+      "descricao": "Porções quentes e frias feitas com ingredientes frescos e muito sabor"
+    },
+    {
+      "icone": "snowflake",
+      "titulo": "Ambiente Climatizado",
+      "descricao": "Salão interno com ar-condicionado e área externa ao ar livre — você escolhe"
+    },
+    {
+      "icone": "glass",
+      "titulo": "Happy Hour Perfeito",
+      "descricao": "O melhor fim de tarde de Taquaritinga com promoções, drinks e boa companhia"
+    },
+    {
+      "icone": "calendar",
+      "titulo": "Eventos & Confraternizações",
+      "descricao": "Espaço ideal para aniversários, encontros corporativos e celebrações"
+    },
+    {
+      "icone": "star",
+      "titulo": "Atendimento Nota 10",
+      "descricao": "Equipe atenciosa e preparada para tornar cada visita especial"
+    },
+    {
+      "icone": "music",
+      "titulo": "Clima Agradável",
+      "descricao": "Playlist curada, iluminação aconchegante e ambiente que faz você querer ficar mais"
+    }
+  ],
+  "experiencias": [
+    {
+      "titulo": "Happy Hour",
+      "descricao": "Fim de tarde com drinks, cerveja gelada e aquela descontração que só o Empório tem",
+      "icone": "glass",
+      "imagem": "imagens/galeria/drink-hortela.png"
+    },
+    {
+      "titulo": "Noite com Amigos",
+      "descricao": "Porções para compartilhar, risadas e o clima perfeito para encontrar a turma",
+      "icone": "utensils",
+      "imagem": "imagens/galeria/area-externa-noite.png"
+    },
+    {
+      "titulo": "Encontro a Dois",
+      "descricao": "Ambiente íntimo e drinks especiais para momentos que merecem ser celebrados",
+      "icone": "star",
+      "imagem": "imagens/galeria/corredor-drinks.png"
+    },
+    {
+      "titulo": "Sábado no Empório",
+      "descricao": "Almoço, tarde e noite — o dia inteiro com o melhor da gastronomia e bebidas",
+      "icone": "sun",
+      "imagem": "imagens/galeria/fachada-diurna.png"
+    },
+    {
+      "titulo": "Porções & Drinks",
+      "descricao": "A combinação perfeita: porções generosas acompanhadas dos melhores drinks da casa",
+      "icone": "cocktail",
+      "imagem": "imagens/galeria/porcoes-drinks.png"
+    }
+  ],
+  "depoimentos": [
+    {
+      "texto": "Ambiente muito agradável, drinks excelentes e porções fartas. Virou meu lugar favorito em Taquaritinga!",
+      "autor": "Avaliação Google",
+      "estrelas": 5,
+      "plataforma": "google"
+    },
+    {
+      "texto": "Cerveja sempre gelada, atendimento nota 10 e o clima é perfeito para ir com amigos. Recomendo demais!",
+      "autor": "Avaliação Google",
+      "estrelas": 5,
+      "plataforma": "google"
+    },
+    {
+      "texto": "Melhor happy hour da cidade. Ótimas porções, preço justo e lugar muito bonito. Voltarei com certeza.",
+      "autor": "Avaliação Facebook",
+      "estrelas": 5,
+      "plataforma": "facebook"
+    },
+    {
+      "texto": "Lugar aconchegante, boa comida e drinks muito bem feitos. A área externa é um charme.",
+      "autor": "Avaliação Facebook",
+      "estrelas": 4,
+      "plataforma": "facebook"
+    }
+  ],
+  "horarios": [
+    { "dia": "Segunda-feira", "abreviado": "Seg", "horario": "Fechado", "aberto": false },
+    { "dia": "Terça-feira", "abreviado": "Ter", "horario": "17:00 – 00:00", "aberto": true },
+    { "dia": "Quarta-feira", "abreviado": "Qua", "horario": "17:00 – 00:00", "aberto": true },
+    { "dia": "Quinta-feira", "abreviado": "Qui", "horario": "17:00 – 00:00", "aberto": true },
+    { "dia": "Sexta-feira", "abreviado": "Sex", "horario": "17:00 – 00:00", "aberto": true, "badge": "Happy Hour" },
+    { "dia": "Sábado", "abreviado": "Sáb", "horario": "11:00 – 01:00", "aberto": true, "badge": "Dia Inteiro" },
+    { "dia": "Domingo", "abreviado": "Dom", "horario": "Consultar", "aberto": true, "badge": "Especial" }
+  ],
+  "contato": {
+    "endereco": "Av. Paulo Roberto Scandar, 695 - Centro, Taquaritinga - SP",
+    "telefone": "(16) 3252-8621",
+    "whatsapp": "551632528621",
+    "instagram": "@emporio.gourmet",
+    "instagram_url": "https://www.instagram.com/emporio.gourmet/",
+    "google_maps_embed": "https://www.google.com/maps?q=-21.4050,-48.5087&output=embed",
+    "google_maps_link": "https://www.google.com/maps/dir/?api=1&destination=-21.4050,-48.5087"
+  },
+  "galeria": [
+    { "src": "imagens/galeria/fachada-diurna.png", "alt": "Fachada diurna do Empório Gourmet com mesas externas", "categoria": "ambiente" },
+    { "src": "imagens/galeria/area-externa-noite.png", "alt": "Área externa noturna com luzes decorativas", "categoria": "momentos" },
+    { "src": "imagens/galeria/drink-hortela.png", "alt": "Drink refrescante com hortelã", "categoria": "drinks" },
+    { "src": "imagens/galeria/porcoes-drinks.png", "alt": "Porções e drinks servidos na mesa", "categoria": "porcoes" },
+    { "src": "imagens/galeria/area-externa-dia.png", "alt": "Área externa com guarda-sóis durante o dia", "categoria": "ambiente" },
+    { "src": "imagens/galeria/corredor-drinks.png", "alt": "Corredor decorado com quadros de drinks", "categoria": "ambiente" },
+    { "src": "imagens/galeria/prateleira-vinhos.png", "alt": "Prateleira de vinhos e bebidas selecionadas", "categoria": "ambiente" }
+  ]
+}

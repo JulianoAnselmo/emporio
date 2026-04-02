@@ -1,0 +1,84 @@
+window.__DATA__ = window.__DATA__ || {};
+window.__DATA__.cardapio = {
+  "categorias": [
+    {
+      "id": "destaques",
+      "nome": "Destaques da Casa",
+      "descricao": "Os mais pedidos e favoritos do Empório",
+      "ordem": 1,
+      "itens": [
+        { "nome": "Bolinho de Bacalhau", "descricao": "Bolinhos crocantes de bacalhau desfiado, servidos com molho tártaro", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": ["mais-pedido"], "disponivel": true, "observacao": "" },
+        { "nome": "Camarão Empanado", "descricao": "Camarões empanados crocantes com molho especial da casa", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": ["destaque"], "disponivel": true, "observacao": "" },
+        { "nome": "Gin Tônica da Casa", "descricao": "Gin premium com tônica artesanal, especiarias e frutas frescas", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": ["destaque", "drink"], "disponivel": true, "observacao": "" },
+        { "nome": "Tábua do Empório", "descricao": "Seleção de frios, queijos, torradas e antepastos para compartilhar", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": ["mais-pedido"], "disponivel": true, "observacao": "" },
+        { "nome": "Moscow Mule", "descricao": "Vodka, espuma de gengibre, limão e hortelã na caneca de cobre", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": ["destaque", "drink"], "disponivel": true, "observacao": "" }
+      ]
+    },
+    {
+      "id": "porcoes-quentes",
+      "nome": "Porções Quentes",
+      "descricao": "Porções para compartilhar e acompanhar a noite",
+      "ordem": 2,
+      "itens": [
+        { "nome": "Frango à Passarinho", "descricao": "Pedaços crocantes de frango temperados com alho e limão", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": [], "disponivel": true, "observacao": "" },
+        { "nome": "Batata Frita com Cheddar e Bacon", "descricao": "Batatas fritas cobertas com cheddar cremoso e bacon crocante", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": ["mais-pedido"], "disponivel": true, "observacao": "" },
+        { "nome": "Isca de Tilápia", "descricao": "Iscas de tilápia empanadas com farinha panko e molho tártaro", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": [], "disponivel": true, "observacao": "" },
+        { "nome": "Calabresa Acebolada", "descricao": "Linguiça calabresa fatiada na chapa com cebola caramelizada", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": [], "disponivel": true, "observacao": "" },
+        { "nome": "Polenta Frita", "descricao": "Palitos de polenta crocantes por fora e cremosos por dentro", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": [], "disponivel": true, "observacao": "" },
+        { "nome": "Dadinho de Tapioca", "descricao": "Cubinhos de tapioca com queijo coalho, servidos com geleia de pimenta", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": ["novo"], "disponivel": true, "observacao": "" }
+      ]
+    },
+    {
+      "id": "porcoes-frias",
+      "nome": "Porções Frias",
+      "descricao": "Entradas e frios para começar bem a noite",
+      "ordem": 3,
+      "itens": [
+        { "nome": "Bruschetta Caprese", "descricao": "Torradas com tomate fresco, mozzarella de búfala, manjericão e azeite", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": [], "disponivel": true, "observacao": "" },
+        { "nome": "Carpaccio", "descricao": "Finas fatias de carne bovina com rúcula, parmesão e molho mostarda", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": ["destaque"], "disponivel": true, "observacao": "" },
+        { "nome": "Salada Caesar", "descricao": "Mix de folhas, croutons, parmesão e molho caesar com frango grelhado", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": [], "disponivel": true, "observacao": "" },
+        { "nome": "Tábua de Frios", "descricao": "Seleção de queijos, presuntos, azeitonas, torradas e geleias artesanais", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": ["mais-pedido"], "disponivel": true, "observacao": "" }
+      ]
+    },
+    {
+      "id": "drinks",
+      "nome": "Drinks",
+      "descricao": "Carta de drinks autorais e clássicos",
+      "ordem": 4,
+      "itens": [
+        { "nome": "Caipirinha Clássica", "descricao": "Cachaça premium, limão tahiti e açúcar — o clássico brasileiro", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": [], "disponivel": true, "observacao": "" },
+        { "nome": "Gin Tônica Especial", "descricao": "Gin premium, tônica artesanal, zimbro, cardamomo e fatias de pepino", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": ["destaque"], "disponivel": true, "observacao": "" },
+        { "nome": "Moscow Mule", "descricao": "Vodka, espuma de gengibre, limão siciliano e hortelã na caneca de cobre", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": ["mais-pedido"], "disponivel": true, "observacao": "" },
+        { "nome": "Aperol Spritz", "descricao": "Aperol, espumante prosecco e água com gás — leve e refrescante", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": [], "disponivel": true, "observacao": "" },
+        { "nome": "Negroni", "descricao": "Gin, Campari e Vermute Rosso — amargo e elegante", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": [], "disponivel": true, "observacao": "" },
+        { "nome": "Drink do Empório", "descricao": "Criação exclusiva da casa — pergunte ao bartender a receita do mês", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": ["novo", "destaque"], "disponivel": true, "observacao": "" }
+      ]
+    },
+    {
+      "id": "cervejas",
+      "nome": "Cervejas",
+      "descricao": "Rótulos artesanais e tradicionais sempre gelados",
+      "ordem": 5,
+      "itens": [
+        { "nome": "Chopp Pilsen", "descricao": "Chopp claro e refrescante, tirado na hora", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": ["mais-pedido"], "disponivel": true, "observacao": "" },
+        { "nome": "IPA Artesanal", "descricao": "India Pale Ale com notas cítricas e amargor equilibrado", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": [], "disponivel": true, "observacao": "" },
+        { "nome": "Weiss", "descricao": "Cerveja de trigo leve, frutada e refrescante", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": [], "disponivel": true, "observacao": "" },
+        { "nome": "Original 600ml", "descricao": "Cerveja premium servida bem gelada na garrafa", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": [], "disponivel": true, "observacao": "" },
+        { "nome": "Heineken Long Neck", "descricao": "Cerveja puro malte, leve e saborosa", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": [], "disponivel": true, "observacao": "" }
+      ]
+    },
+    {
+      "id": "pratos",
+      "nome": "Pratos",
+      "descricao": "Pratos completos para um jantar especial",
+      "ordem": 6,
+      "itens": [
+        { "nome": "Filé Mignon ao Molho Madeira", "descricao": "Medalhão de filé mignon com molho madeira, arroz e batata rústica", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": ["destaque"], "disponivel": true, "observacao": "" },
+        { "nome": "Salmão Grelhado", "descricao": "Filé de salmão grelhado com legumes salteados e purê de batata", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": [], "disponivel": true, "observacao": "" },
+        { "nome": "Risoto de Camarão", "descricao": "Risoto cremoso com camarões, tomate seco e manjericão fresco", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": ["mais-pedido"], "disponivel": true, "observacao": "" },
+        { "nome": "Hambúrguer Artesanal", "descricao": "Blend especial 180g, queijo cheddar, bacon, alface, tomate e molho da casa", "preco": null, "preco_meia": null, "preco_inteira": null, "imagem": "", "tags": [], "disponivel": true, "observacao": "" }
+      ]
+    }
+  ]
+}
+;
